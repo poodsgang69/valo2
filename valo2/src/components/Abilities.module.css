@@ -1,0 +1,104 @@
+.overallFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abilityContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 50%;
+    height: 90px;
+    border-radius: 7px;
+    margin-top: 1px;
+}
+
+
+.abilityContainer:hover > :not(:hover) {
+    opacity: 0.4;
+}
+
+.abilityContainer > div[id="ab1"]:hover:nth-of-type(1){
+    transition: 0.5s ease-in-out;
+    width: 80%;
+}
+
+
+.abilityContainer > div[id="ab2"]:hover:nth-of-type(2)  {
+    transition: 0.5s ease-in-out;
+    width: 80%;
+}
+
+.abilityContainer > div[id="ab3"]:hover:nth-of-type(3)  {
+    transition: 0.5s ease-in-out;
+    width: 80%;
+}
+
+.abilityContainer > div[id="ab4"]:hover:nth-of-type(4)  {
+    transition: 0.5s ease-in-out;
+    width: 80%;
+}
+
+
+.ability {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(238, 11, 37, 0.6);
+    width: 24.5%;
+    height: 100%;
+    border-radius: 7px;
+    
+    position: relative;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.ability::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+    opacity: 0;
+    /* transition: 0.5s; */
+}
+
+
+.ability > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: auto;
+    height: 70%;
+
+    transition: 0.3s;
+}
+
+.info {
+    position: absolute;
+    left: 20%;
+    pointer-events: none;
+    color: whitesmoke;
+    opacity: 0;
+    font-size: large;
+    /* background-color: bisque; */
+    transition: 0.3s ease-in-out;
+}
+
+
+.ability:hover .info {
+    transition: 0.3s ease-in-out;
+    left: 56%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.ability:hover img {
+    transition: 0.3s ease-in-out;
+    left: 15%;
+}

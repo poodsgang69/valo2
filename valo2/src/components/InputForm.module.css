@@ -1,0 +1,95 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@font-face {
+    font-family: valorant-font;
+    src: url(./Font/ValorantFont.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+    /* font-family: Poppins, sans-serif; */
+    font-family: valorant-font, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(./pics/valorunt.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11%;
+}
+
+
+.form {
+    background-color: rgba(238, 11, 37, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.inputEle > input {
+    width: 100%;
+    outline:none;
+    border: none;
+    border-radius: 7px;
+    height: 60px;
+    text-indent: 20px;
+    font-size: 20px;
+}
+
+.inputEle > input:focus{
+    outline: inherit;
+    background-color: rgb(144, 225, 238);
+    transition: 0.1s ease-in-out;
+}
+
+.inputEle > input::placeholder {
+    font-family: inherit;
+    /* padding-left: 20px; */
+    font-size: 20px;
+    /* margin-top: 20px; */
+}
+
+.btnEle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnEle > .btn {
+    /* color: rgba(185, 212, 245, 0.954); */
+    margin-top: 22px;
+    border: 2px solid black;
+    outline: none;
+    font-size: large;
+    background-color: rgba(243, 247, 247, 0.879);
+    border-radius: 7px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    padding-top: 3px;
+}
+
+/* .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+.wrapper input[type="text"] {
+    flex: 1 2 auto;
+    color: orange;
+} */
+
+.btnEle > .btn:active {
+    transform: scale(0.95);
+}
